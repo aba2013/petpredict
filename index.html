@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Adoption Matchmaker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Perfect Pet!</h1>
+        <p>Answer a few questions and get pet recommendations based on your lifestyle!</p>
+    </header>
+
+    <main>
+        <section class="quiz">
+            <h2>Let's Get Started</h2>
+            <form id="quizForm">
+                <label for="livingSituation">What type of living environment do you have?</label>
+                <select id="livingSituation" name="livingSituation">
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="condo">Condo</option>
+                </select>
+
+                <label for="timeForExercise">How much time can you dedicate to exercise your pet daily?</label>
+                <select id="timeForExercise" name="timeForExercise">
+                    <option value="low">Less than 30 minutes</option>
+                    <option value="medium">30-60 minutes</option>
+                    <option value="high">More than 1 hour</option>
+                </select>
+
+                <label for="petType">Do you prefer a dog or a cat?</label>
+                <select id="petType" name="petType">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+
+                <button type="submit">See My Pet Match</button>
+            </form>
+        </section>
+
+        <section class="results" id="results" style="display: none;">
+            <h2>Your Recommended Pet:</h2>
+            <p id="petRecommendation"></p>
+            <button id="newRecommendation">Get Another Recommendation</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Pet Adoption Matchmaker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
